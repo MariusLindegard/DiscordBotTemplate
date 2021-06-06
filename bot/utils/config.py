@@ -34,5 +34,3 @@ class Config():
     def save_config(self):
             with codecs.open('config.json', 'w', encoding='utf8') as File:
                 json.dump(self.config, File, sort_keys=True, indent=4, ensure_ascii=False)
-
-print('test')
