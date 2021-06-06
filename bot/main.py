@@ -75,7 +75,6 @@ async def on_guild_join(guild):
     utils.config.config["guilds"][str(guild.id)] = utils.config.config["guild template"]
     utils.config.save_config()
 
-
 @bot.command()
 async def unload_extension(ctx, extension):
     if extension in os.listdir("bot/cogs"):
