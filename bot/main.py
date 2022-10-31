@@ -27,7 +27,8 @@ def space(spaces):
 
 token = utils.config.token
 
-intents = discord.Intents.default()
+intents = intents = discord.Intents.all()
+
 bot = commands.Bot(
     command_prefix=prefix, case_insensitive=True, intents=intents)
 bot.remove_command("help")
